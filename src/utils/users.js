@@ -18,10 +18,6 @@ const addUser = ({ id, username, room }) => {
     (user) => user.room === room && user.username === username
   );
 
-  console.log("users", users);
-
-  console.log(existingUser);
-
   //Validate user
   if (existingUser) {
     return {
